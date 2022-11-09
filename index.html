@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess- Number game -start to play</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="intro">
+        <img src="./guessimg.jpg" />
+        <h5>RANGE 1 to 30</h5>
+        <ul>
+          How to Play:
+          <li>Guess a secret number</li>
+          <li>If your guess is too high or too low,give you a hint.</li>
+          <li>See how many turns it takes you to win! and your score.</li>
+        </ul>
+      </div>
+      <div class="input">
+        <input
+          type="number"
+          class="enterno"
+          id="enterno"
+          placeholder="Enter the number"
+        />
+        <button class="button" id="clicked" onclick="clicked()" size="30">
+          check
+        </button>
+      </div>
+      <div class="output">
+        <p class="out">Hints:</p>
+        <input type="textbox" class="display" id="display" />
+      </div>
+      <div class="attempt">
+        <p>No.of.Attempts:<span id="attempt">0</span></p>
+      </div>
+      <div class="score">
+        <p>Your Score:<span id="score">0</span></p>
+        <p class="high">High score:50</p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
